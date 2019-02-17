@@ -10,11 +10,9 @@ end
 def contain_a(array)
   new = []
   array.select do|word|
-   if word.include?("a")
-    new << word
-   end
+   new << word if word.include?("a")
   end
-  return new 
+    new 
 end
 
 def first_wa(array)
